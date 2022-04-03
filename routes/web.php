@@ -16,3 +16,51 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+
+
+Route::get('/companies', function () {
+    return view('companies');
+});
+
+
+
+Route::get('/Contact-us', function () {
+    return view('Contact-us');
+});
+
+
+Route::get('/create-account', function () {
+    return view('create-account');
+});
+
+
+
+Route::get('/Jobs-details', function () {
+    return view('Jobs-details');
+});
+
+
+Route::get('/Jobs', function () {
+    return view('Jobs');
+});
+
+
+Route::get('/Services', function () {
+    return view('Services');
+});
+
+Route::get('/Sign-up', function () {
+    return view('Sign-up');
+});
+
+
+Route::get('/Sign-up', function () {
+    return view('Sign-up');
+});
