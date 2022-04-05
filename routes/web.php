@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,54 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
 
 
 
-Route::get('/about', function () {
-    return view('about');
-});
-
-
-
-Route::get('/companies', function () {
-    return view('companies');
-});
-
-
-
-Route::get('/Contact-us', function () {
-    return view('Contact-us');
-});
-
-
-Route::get('/create-account', function () {
-    return view('create-account');
-});
-
-
-
-Route::get('/Jobs-details', function () {
-    return view('Jobs-details');
-});
-
-
-Route::get('/Jobs', function () {
-    return view('Jobs');
-});
-
-
-Route::get('/Services', function () {
-    return view('Services');
-});
-
-Route::get('/Sign-up', function () {
-    return view('Sign-up');
-});
-
-
-Route::get('/Sign-up', function () {
-    return view('Sign-up');
-});
+Route::get('/',[IndexController::class,'show_index'])->name("index");
+Route::get('/about',[IndexController::class,'show_about'])->name("about");
+Route::get('/companies',[IndexController::class,'show_companies'])->name("companies");
+Route::get('/Contact-us',[IndexController::class,'show_contact'])->name("contact");
+Route::get('/Services',[IndexController::class,'show_services'])->name("Services");
+Route::get('/Jobs',[IndexController::class,'show_jobs'])->name("Jobs");
+Route::get('/login',[IndexController::class,'show_login'])->name("login");
+Route::get('/signup',[IndexController::class,'show_signup'])->name("signup");
+Route::get('/Jobs-details',[IndexController::class,'show_jobs_details'])->name("Jobs-details");
