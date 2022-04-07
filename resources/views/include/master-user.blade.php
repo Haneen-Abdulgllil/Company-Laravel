@@ -72,7 +72,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
 </head>
 
 <body>
-@yield('admin_pages')
+@yield('user_pages')
 <!-- Layout wrapper -->
 <div class="layout-wrapper layout-content-navbar  ">
 
@@ -112,7 +112,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
         <!-- <use fill="#696cff" xlink:href="#path-3"></use>
         <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-3"></use> -->
         <a href="#" class="navbar-brand">
-            <img src="img/logo.svg" alt="" style="width:50px;"><sub style="color: rgb(255, 251, 251); margin:3px; position:absolute; top:80px; font-weight:600; ">Directe Base</sub>
+            <img src="img/1.jpg" alt="" style="width:100px; height:200px; " >
         </a>
     </g>
     <!-- <g id="Path-4" mask="url(#mask-2)">
