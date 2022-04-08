@@ -74,7 +74,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
 <body>
 
 
-@yield('admin_pages')
+@yield('user_pages')
 
 
 <!-- Layout wrapper -->
@@ -116,7 +116,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
         <!-- <use fill="#696cff" xlink:href="#path-3"></use>
         <use fill-opacity="0.2" fill="#FFFFFF" xlink:href="#path-3"></use> -->
         <a href="#" class="navbar-brand">
-            <img src="img/logo.svg" alt="" style="width:50px;"><sub style="color: rgb(255, 251, 251); margin:3px; position:absolute; top:80px; font-weight:600; ">Directe Base</sub>
+            <img src="img/1.jpg" alt="" style="width:100px; height:200px; ">
         </a>
     </g>
     <!-- <g id="Path-4" mask="url(#mask-2)">
@@ -162,129 +162,18 @@ gtag('config', 'GA_MEASUREMENT_ID');
 <li class="menu-item">
     <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-user"></i>
-        <div data-i18n="jobs">Jobs</div>
+        <div data-i18n="personal info">personal info</div>
     </a>
-    <ul class="menu-sub">
+    <!-- <ul class="menu-sub"> -->
         <li class="menu-item ml-5">
-        <a href="/add_job" class="menu-link">
-            <div data-i18n=" add user">add job</div>
+        <a href="/add_personal_info" class="menu-link">
+            <div data-i18n=" add_personal_info">add personal_info</div>
         </a>
         </li>
 
         <li class="menu-item">
-        <a href="/jobs" class="menu-link">
-            <div data-i18n=" users list"> jobs list</div>
-        </a>
-        </li>
-    </ul>
-</li>
-
-
-
-
-<li class="menu-item">
-    <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-user"></i>
-        <div data-i18n="companies">Companies</div>
-    </a>
-    <ul class="menu-sub">
-        <li class="menu-item">
-        <a href="/add_company" class="menu-link">
-            <div data-i18n=" add company">add company</div>
-        </a>
-        </li>
-
-        <li class="menu-item">
-        <a href="/companies" class="menu-link">
-            <div data-i18n=" companies list"> companies list</div>
-        </a>
-        </li>
-    </ul>
-</li>
-
-
-
-<li class="menu-item">
-    <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-user"></i>
-        <div data-i18n="ads">ads</div>
-    </a>
-    <!-- <ul class="menu-sub"> -->
-        <li class="menu-item">
-        <a href="/add_ads" class="menu-link">
-            <div data-i18n=" add ads">add ads</div>
-        </a>
-        </li>
-
-        <li class="menu-item">
-        <a href="/ads" class="menu-link">
-            <div data-i18n=" ads list"> ads list</div>
-        </a>
-        </li>
-    <!-- </ul> -->
-</li>
-
-
-
-<li class="menu-item">
-    <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-user"></i>
-        <div data-i18n="contact">contact</div>
-    </a>
-    <!-- <ul class="menu-sub"> -->
-        <li class="menu-item">
-        <a href="/add_contact" class="menu-link">
-            <div data-i18n=" add contact">add contact</div>
-        </a>
-        </li>
-
-        <li class="menu-item">
-        <a href="/contact" class="menu-link">
-            <div data-i18n=" contact list"> contact list</div>
-        </a>
-        </li>
-    <!-- </ul> -->
-</li>
-
-
-
-<li class="menu-item">
-    <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-user"></i>
-        <div data-i18n="parteners">parteners</div>
-    </a>
-    <!-- <ul class="menu-sub"> -->
-        <li class="menu-item">
-        <a href="/add_partener" class="menu-link">
-            <div data-i18n=" add partener">add partener</div>
-        </a>
-        </li>
-
-        <li class="menu-item">
-        <a href="/partener" class="menu-link">
-            <div data-i18n=" parteners list"> parteners list</div>
-        </a>
-        </li>
-    <!-- </ul> -->
-</li>
-
-
-
-<li class="menu-item">
-    <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-user"></i>
-        <div data-i18n="services">services</div>
-    </a>
-    <!-- <ul class="menu-sub"> -->
-        <li class="menu-item">
-        <a href="/add_services" class="menu-link">
-            <div data-i18n=" add services">add services</div>
-        </a>
-        </li>
-
-        <li class="menu-item">
-        <a href="/services" class="menu-link">
-            <div data-i18n=" services list"> services list</div>
+        <a href="/personal_info" class="menu-link">
+            <div data-i18n=" personal info list"> personal info list</div>
         </a>
         </li>
     <!-- </ul> -->
@@ -293,6 +182,84 @@ gtag('config', 'GA_MEASUREMENT_ID');
 
 
 
+<li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="education">education</div>
+    </a>
+    <!-- <ul class="menu-sub"> -->
+    <li class="menu-item">
+        <a href="/add_education" class="menu-link">
+            <div data-i18n=" add education">add education</div>
+        </a>
+        </li>
+        <li class="menu-item">
+        <a href="/education" class="menu-link">
+            <div data-i18n=" education list"> education list</div>
+        </a>
+        </li>
+    <!-- </ul> -->
+</li>
+
+<li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="skills">skills</div>
+    </a>
+    <!-- <ul class="menu-sub"> -->
+        <li class="menu-item">
+        <a href="/add_skills" class="menu-link">
+            <div data-i18n=" add skills">add skills</div>
+        </a>
+        </li>
+
+        <li class="menu-item">
+        <a href="/skills" class="menu-link">
+            <div data-i18n=" skills list"> skills list</div>
+        </a>
+        </li>
+    <!-- </ul> -->
+</li>
+
+<li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="courses">courses</div>
+    </a>
+    <!-- <ul class="menu-sub"> -->
+        <li class="menu-item">
+        <a href="/add_courses" class="menu-link">
+            <div data-i18n=" add courses">add courses</div>
+        </a>
+        </li>
+
+        <li class="menu-item">
+        <a href="/courses" class="menu-link">
+            <div data-i18n=" courses list"> courses list</div>
+        </a>
+        </li>
+    <!-- </ul> -->
+</li>
+
+<li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="experience">experience</div>
+    </a>
+    <!-- <ul class="menu-sub"> -->
+        <li class="menu-item">
+        <a href="/add_experience" class="menu-link">
+            <div data-i18n=" add experience">add experience</div>
+        </a>
+        </li>
+
+        <li class="menu-item">
+        <a href="/experience" class="menu-link">
+            <div data-i18n=" experience list"> experience list</div>
+        </a>
+        </li>
+    <!-- </ul> -->
+</li>
 
 
 </aside>
