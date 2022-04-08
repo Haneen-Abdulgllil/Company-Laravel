@@ -1,6 +1,6 @@
 <?php
-namespace App\Http\Controllers;
-
+namespace App\Http\Controllers\Index;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -14,7 +14,7 @@ class IndexController extends Controller
         return view('index.about');
     }
 
-    public function show_companies(){
+    public function show_parteners(){
         return view('index.companies');
     }
 

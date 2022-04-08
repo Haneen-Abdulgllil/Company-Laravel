@@ -54,7 +54,7 @@
                         <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav w-100">
                                 <a href="{{ url('/') }}" class="nav-item nav-link active  ms-5"><i class="bi bi-house-fill"></i> Home</a>
-                                <a href="{{ url('/companies') }}" class="nav-item nav-link  ms-5 " > <i class="bi bi-star-fill"></i>Companies</a>
+                                <a href="{{ url('/parteners') }}" class="nav-item nav-link  ms-5 " > <i class="bi bi-star-fill"></i>Companies</a>
                                 <a href="{{ url('/Jobs') }}" class="nav-item nav-link  ms-5 " > <i class="bi bi-tools"></i>  Jobs</a>
 
                                 <a href="{{ url('/Services') }}" class="nav-item nav-link  ms-5 " > <i class="bi bi-clipboard-data"></i> Services</a>
