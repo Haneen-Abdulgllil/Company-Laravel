@@ -231,7 +231,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
         <i class="menu-icon tf-icons bx bx-user"></i>
         <div data-i18n="contact">contact</div>
     </a>
-    <!-- <ul class="menu-sub"> -->
+    <ul class="menu-sub">
         <li class="menu-item">
         <a href="/add_contact" class="menu-link">
             <div data-i18n=" add contact">add contact</div>
@@ -243,7 +243,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
             <div data-i18n=" contact list"> contact list</div>
         </a>
         </li>
-    <!-- </ul> -->
+    </ul>
 </li>
 
 
@@ -253,7 +253,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
         <i class="menu-icon tf-icons bx bx-user"></i>
         <div data-i18n="parteners">parteners</div>
     </a>
-    <!-- <ul class="menu-sub"> -->
+    <ul class="menu-sub">
         <li class="menu-item">
         <a href="/add_partener" class="menu-link">
             <div data-i18n=" add partener">add partener</div>
@@ -265,7 +265,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
             <div data-i18n=" parteners list"> parteners list</div>
         </a>
         </li>
-    <!-- </ul> -->
+    </ul>
 </li>
 
 

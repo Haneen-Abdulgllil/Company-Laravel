@@ -22,64 +22,36 @@
         <div class="container-xxl flex-grow-1 container-p-y">
 
 
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> Add Job</h4>
+<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> Add services</h4>
 
 
 
 
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
-<form class="card-body" action="" method="POST" enctype="multipart/form-data">
+<form class="card-body" action="/save_serv" method="POST" enctype="multipart/form-data">
+@csrf
 <div class="row g-3">
     <div class="col-md-6">
-    <label class="form-label" for="multicol-username">Job Title</label>
+    <label class="form-label" for="multicol-username">services Title</label>
     <input name="name" type="text" id="multicol-username" class="form-control" placeholder="" />
     </div>
 
 
     <div class="col-md-6">
-        <label for="formFile" class="form-label">Sub Title</label>
-        <input class="form-control" name="sub_title" type="text" id="formFile">
+        <label for="formFile" class="form-label">created by</label>
+        <input class="form-control" name="created_by" type="text" id="formFile">
     </div>
 
 
 
     <div class="col-md-6">
-        <label for="formFile" class="form-label">city</label>
-        <input class="form-control" name="sub_title" type="text" id="formFile">
-    </div>
-
- <div class="col-md-6">
-        <label for="formFile" class="form-label">image</label>
-        <input class="form-control" name="image" type="file" id="formFile">
-    </div>
-
-    <div class="col-md-6 col-12 mb-md-0 mb-3 ps-md-0">
-    <label class="form-label" for="multicol-email"> Company</label>
-                <select name="format" class="form-select item-details mb-2">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
+        <label for="formFile" class="form-label">desc</label>
+        <input class="form-control" name="description" type="text" id="formFile">
     </div>
 
 
- <div class="col-md-6 col-12 mb-md-0 mb-3 ps-md-0">
-    <label class="form-label" for="multicol-email"> Degree</label>
-                <select name="format" class="form-select item-details mb-2">
-                    <option value="Bachelor's">Bachelor's</option>
-                    <option value="Master's">Master's</option>
-                    <option value="Ph.D.">Ph.D.</option>
-                </select>
-    </div>
 
- <div class="col-md-6 col-12 mb-md-0 mb-3 ps-md-0">
-    <label class="form-label" for="multicol-email">Time</label>
-                <select name="format" class="form-select item-details mb-2">
-                    <option value="Full-time">Full-time</option>
-                    <option value="Part-time">Part-time</option>
-                    <option value="Temporary">Temporary</option>
-                </select>
     </div>
 
     <div class="col-md-6">
@@ -97,10 +69,7 @@
         </div>
     </div>
     </div>
-    <div>
-        <label for="exampleFormControlTextarea1" class="form-label">Requirements</label>
-        <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
+
 </div>
 
 

@@ -32,29 +32,22 @@
     <table class="table table-bordered">
     <thead>
         <tr>
-        <th>Job Title</th>
-        <th>Sub Title</th>
-        <th>city</th>
-        <th>image</th>
-        <th>Company</th>
-        <th>Degree</th>
-        <th>Time</th>
+        <th>services Title</th>
+        <th>created by</th>
+        <th>desc</th>
         <th>Status</th>
-        <th>Requirements</th>
         <th>Operation</th>
         </tr>
     </thead>
     <tbody>
         <tr>
+            foreach($params as $serv){
+            <td>{{$serv->name}}</td>
             <td>1</td>
             <td>1</td>
             <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
+
+
             <td>
 
         <a href="" class="btn btn-icon btn-outline-dribbble">
@@ -71,6 +64,9 @@
             </button>
 </form>
             </td>
+
+            }
+
 
         </tr>
 

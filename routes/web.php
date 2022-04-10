@@ -76,6 +76,7 @@ Route::get('/partener',[PartenerController::class,'show_partener'])->name("show_
 
 Route::get('/add_services',[ServicesController::class,'add_services'])->name("add_services");
 Route::get('/services',[ServicesController::class,'show_services'])->name("show_services");
+Route::post('/save_serv',[ServicesController::class,'store_services'])->name("store_services");
 
 //
 

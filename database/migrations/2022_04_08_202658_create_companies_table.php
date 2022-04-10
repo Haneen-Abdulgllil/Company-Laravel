@@ -15,6 +15,16 @@ return new class extends Migration
     {
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('description');
+            $table->string('image');
+            $table->string('link');
+            $table->string('location');
+            $table->string('created_by');
+            // $table->timestamps('created_at');
+            // $table->timestamps('updated_at');
+            $table->tinyInteger('is_active');
+            $table->tinyInteger('partener');
             $table->timestamps();
         });
     }
