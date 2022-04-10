@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('experiences', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('date');
+            $table->integer('duration');
+            $table->string('company');
             $table->timestamps();
         });
     }
