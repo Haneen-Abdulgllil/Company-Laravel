@@ -74,9 +74,15 @@ Route::get('/contact',[ContactController::class,'show_contact'])->name("show_con
 Route::get('/add_partener',[PartenerController::class,'add_partener'])->name("add_partener");
 Route::get('/partener',[PartenerController::class,'show_partener'])->name("show_partener");
 
+
+
 Route::get('/add_services',[ServicesController::class,'add_services'])->name("add_services");
-Route::get('/services',[ServicesController::class,'show_services'])->name("show_services");
+Route::get('/services',[ServicesController::class,'Show_services'])->name("show_services");
 Route::post('/save_serv',[ServicesController::class,'store_services'])->name("store_services");
+Route::get('/services',[ServicesController::class,'get_all'])->name("get_all");
+Route::get('/edit_services/{services_id}',[ServicesController::class,'edit'])->name('edit_services');
+Route::get('/toggle_services/{services_id}',[ServicesController::class,'toggle'])->name('toggle_services');
+Route::post('/update_services/{services_id}',[ServicesController::class,'update'])->name('update_services');
 
 //
 

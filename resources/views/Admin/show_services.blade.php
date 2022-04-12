@@ -32,6 +32,7 @@
     <table class="table table-bordered">
     <thead>
         <tr>
+        <th>id</th>
         <th>services Title</th>
         <th>created by</th>
         <th>desc</th>
@@ -40,36 +41,43 @@
         </tr>
     </thead>
     <tbody>
+    @foreach($services as $service)
         <tr>
-            foreach($params as $serv){
-            <td>{{$serv->name}}</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
+        <td>{{ $loop->iteration }}</td>
+            <td>{{$service->name}}</td>
+            <td>{{$service->created_by}}</td>
+            <td>{{$service->description}}</td>
 
+<!-- <td>
+        <ul class="list-unstyled categorys-list m-0 avatar-group d-flex align-items-center">
 
-            <td>
+            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Christina Parker">
+            <img src="{{ $service->image }}" alt="Avatar" class="rounded-circle">
+            </li>
+        </ul>
+        </td> -->
 
-        <a href="" class="btn btn-icon btn-outline-dribbble">
-            <i class="tf-icons bx bx-edit-alt me-1"></i>
-            </a>
+        <td>
+        @if($service->is_active==1)
+        <span class="badge bg-label-success me-1">مفعل</span>
 
+        @else
+        <span class="badge bg-label-danger me-1">موقف</span>
+        @endif
 
-<form action="/" method = "post" class = "d-inline-block">
-<input type="hidden" value="1" name="">
-<input type="hidden" value="2" name="">
+    </td>
 
-            <button type="submit" class="btn btn-icon btn-outline-dribbble">
-            <i class="tf-icons bx bx-trash me-1"></i>
-            </button>
-</form>
-            </td>
-
-            }
-
-
-        </tr>
-
+        <td>
+        <div class="dropdown">
+            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="bx bx-dots-vertical-rounded"></i></button>
+            <div class="dropdown-menu">
+            <a class="dropdown-item" href="{{ route('edit_services',$service->id) }}"><i class="bx bx-edit-alt me-2"></i> Edit</a>
+            <a class="dropdown-item" href="{{ route('toggle_services',$service->id) }}"><i class="bx bx-trash me-2"></i> @if($service->is_active==1)disable @else enable @endif</a>
+            </div>
+        </div>
+        </td>
+    </tr>
+        @endforeach
 
 </div>
 
