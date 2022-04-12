@@ -29,47 +29,44 @@
 
 <!-- Multi Column with Form Separator -->
 <div class="card mb-4">
-<form class="card-body" action="/save_serv" method="POST" enctype="multipart/form-data">
+<form class="card-body" action="{{ route('update_services',$services->id) }}"  method="POST" enctype="multipart/form-data">
 @csrf
 <div class="row g-3">
     <div class="col-md-6">
     <label class="form-label" for="multicol-username">services Title</label>
-    <input name="name" type="text" id="multicol-username" class="form-control" placeholder="" />
+    <input name="name" type="text" id="multicol-username" class="form-control" placeholder=""   value="{{ $services->name }}">
     </div>
 
 
     <div class="col-md-6">
         <label for="formFile" class="form-label">created by</label>
-        <input class="form-control" name="created_by" type="text" id="formFile">
+        <input class="form-control" name="created_by" type="text" id="formFile"   value="{{ $services->created_by }}" >
     </div>
 
 
 
     <div class="col-md-6">
         <label for="formFile" class="form-label">desc</label>
-        <input class="form-control" name="description" type="text" id="formFile">
+        <input class="form-control" name="description" type="text" id="formFile" value="{{ $services->description }}">
     </div>
 
 
 
     </div>
 
-
-    <div class="col-md-6">
+        <div class="col-md-6">
             <div class="row">
             <label class="col-sm-3 col-form-label text-sm-end" for="formtabs-country">is active</label>
             <div class="col-sm-9">
                 <select  name="is_active" id="formtabs-country" class="select2 form-select" data-allow-clear="true">
 
-                <option value="1">مفعل</option>
-                <option value="-1">معطل</option>
+                <option @if($services->is_active==1) selected @endif value="1">مفعل</option>
+                <option  @if($services->is_active==-1) selected @endif value="-1">معطل</option>
                 </select>
             </div>
             </div>
-    </div>
+        </div>
 
-
-    </div>
 
 </div>
 

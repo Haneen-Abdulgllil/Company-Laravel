@@ -164,7 +164,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
         <i class="menu-icon tf-icons bx bx-user"></i>
         <div data-i18n="jobs">Jobs</div>
     </a>
-    <ul class="menu-sub">
+    <!-- <ul class="menu-sub"> -->
         <li class="menu-item ml-5">
         <a href="/add_job" class="menu-link">
             <div data-i18n=" add user">add job</div>
@@ -176,7 +176,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
             <div data-i18n=" users list"> jobs list</div>
         </a>
         </li>
-    </ul>
+    <!-- </ul> -->
 </li>
 
 
@@ -187,7 +187,7 @@ gtag('config', 'GA_MEASUREMENT_ID');
         <i class="menu-icon tf-icons bx bx-user"></i>
         <div data-i18n="companies">Companies</div>
     </a>
-    <ul class="menu-sub">
+    <!-- <ul class="menu-sub"> -->
         <li class="menu-item">
         <a href="/add_company" class="menu-link">
             <div data-i18n=" add company">add company</div>
@@ -199,10 +199,52 @@ gtag('config', 'GA_MEASUREMENT_ID');
             <div data-i18n=" companies list"> companies list</div>
         </a>
         </li>
-    </ul>
+    <!-- </ul> -->
 </li>
 
 
+
+
+<li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="services">services</div>
+    </a>
+    <!-- <ul class="menu-sub"> -->
+        <li class="menu-item">
+        <a href="/add_services" class="menu-link">
+            <div data-i18n=" add services">add services</div>
+        </a>
+        </li>
+
+        <li class="menu-item">
+        <a href="/services" class="menu-link">
+            <div data-i18n=" services list"> services list</div>
+        </a>
+        </li>
+    <!-- </ul> -->
+</li>
+
+
+<li class="menu-item">
+    <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="parteners">parteners</div>
+    </a>
+    <ul class="menu-sub">
+        <li class="menu-item">
+        <a href="/add_partener" class="menu-link">
+            <div data-i18n=" add partener">add partener</div>
+        </a>
+        </li>
+
+        <li class="menu-item">
+        <a href="/partener" class="menu-link">
+            <div data-i18n=" parteners list"> parteners list</div>
+        </a>
+        </li>
+    </ul>
+</li>
 
 <li class="menu-item">
     <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -248,47 +290,9 @@ gtag('config', 'GA_MEASUREMENT_ID');
 
 
 
-<li class="menu-item">
-    <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-user"></i>
-        <div data-i18n="parteners">parteners</div>
-    </a>
-    <ul class="menu-sub">
-        <li class="menu-item">
-        <a href="/add_partener" class="menu-link">
-            <div data-i18n=" add partener">add partener</div>
-        </a>
-        </li>
-
-        <li class="menu-item">
-        <a href="/partener" class="menu-link">
-            <div data-i18n=" parteners list"> parteners list</div>
-        </a>
-        </li>
-    </ul>
-</li>
 
 
 
-<li class="menu-item">
-    <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-user"></i>
-        <div data-i18n="services">services</div>
-    </a>
-    <!-- <ul class="menu-sub"> -->
-        <li class="menu-item">
-        <a href="/add_services" class="menu-link">
-            <div data-i18n=" add services">add services</div>
-        </a>
-        </li>
-
-        <li class="menu-item">
-        <a href="/services" class="menu-link">
-            <div data-i18n=" services list"> services list</div>
-        </a>
-        </li>
-    <!-- </ul> -->
-</li>
 
 
 
